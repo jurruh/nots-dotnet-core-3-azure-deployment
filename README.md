@@ -9,7 +9,7 @@ First create a ASP.NET Core Web aplication Project with individual user account 
 
 ![](/img/1.1.gif)
 
-To follow up with this tutorial add the follwing code to Startup.cs.
+To follow up with this tutorial add the follwing code to Startup.cs. This makes sure the database migrations are executed when te application is started.
 
 ```
    var context = app.ApplicationServices.GetService<ApplicationDbContext>();
