@@ -38,10 +38,13 @@ After the extension is enabled we need to restart the application. After the res
 
 ## Step 4. Creating a database
 
+Now we have to create a Database on Azure, a Basic database plan fits our needs.
+
 ![](/img/4.1.gif)
 
 ## Step 5. Connecting the App with the database
 
+After the database is created we can add it to our project. This can be done in the publish section of visual studio. Make sure the given connection string name is the same as configured in Startup.cs
 
 ![](/img/5.1.gif)
 
