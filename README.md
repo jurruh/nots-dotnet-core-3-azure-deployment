@@ -12,8 +12,11 @@ First create a ASP.NET Core Web aplication Project with individual user account 
 To follow up with this tutorial add the follwing code to Startup.cs. This makes sure the database migrations are executed when te application is started.
 
 ```
-   var context = app.ApplicationServices.GetService<ApplicationDbContext>();
-   context.Database.Migrate();
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext applicationDbContext){
+
+// somewhere in the method
+
+applicationDbContext.Database.Migrate();
 ```
 ## Step 2. Publish to Azure
 After the project is created we can publish it directly from visual studio to Azure from the Solution Explorer. In this tutorial we publish it as an Azure App Service.
